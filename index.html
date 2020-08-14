@@ -8,5 +8,36 @@
 <body>
     <h1>José Leonel López Ajvix - 2019044</h1>
     <h2>Centro Educativo Técnico Laboral Kinal</h2>
+    <h1>jlopez - 2019044</h1>
+
+    <form>
+        <label for="n1">Ingrese el primer número</label>
+        <input type="text" id="num1">
+        <br>
+        <label for="n2">Ingrese el segundo número</label>
+        <input type="text" id="num2">
+        <br>
+        <input type="button" onclick="suma()" value="Operar">
+        <br>
+        <label for="resultado">Resultado de la suma:</label>
+        <input type="text" id="num3">
+
+    </form>
+
+    <script>
+        var n1, n2, resultado;
+
+        function suma(){
+
+            n1 = num1.value *1;
+
+            n2 = num2.value *1;
+
+            resultado = n1 + n2;
+
+            num3.value = resultado;
+        }
+
+    </script>
 </body>
 </html>
